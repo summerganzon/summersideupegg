@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ap // central_shelf_archive</title>
+    <link rel="stylesheet" href="ap2.css">
+</head>
+<body class="is-loading fade-in">
+    
+    <div id="startup-overlay">
+        <div class="boot-sequence">
+            <div class="glitch-title" data-text="CONFIDENTIAL">CONFIDENTIAL</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <div class="status-logs">
+                <p>> ACCESSING ARCHIVE_C...</p>
+                <p>> DECRYPTING FILE SHELF...</p>
+                <p>> CLEARANCE LEVEL 5 GRANTED.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="file-detail-view">
+        <div class="massive-dossier">
+            <div class="dossier-nav">
+                <button class="close-tab" onclick="closeFile()">[x] BACK_TO_SHELF</button>
+            </div>
+            
+            <div class="dossier-inner">
+                <div class="dossier-left">
+                    <h1 id="detail-title">FILE_NAME</h1>
+                    <p id="detail-id">ID: 000-000</p>
+                    <div class="dossier-image-frame">
+                        <div class="scanner-line"></div>
+                        <img id="detail-img" src="" alt="Dossier Subject">
+                    </div>
+                </div>
+                <div class="dossier-right">
+                    <div class="stamp-confidential">TOP SECRET</div>
+                    <div class="file-content-box">
+                        <h3>SUBJECT DATA:</h3>
+                        <p id="detail-description">Initializing...</p>
+                        <div class="metadata">
+                            <p>> TIMESTAMP: 2026-03-08</p>
+                            <p>> ORIGIN: AP_ARCHIVE_UNIT</p>
+                            <p>> STATUS: DECRYPTED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cyber-desktop">
+        <div class="scanlines"></div>
+        
+        <header class="cabinet-header">
+            <div class="header-led"></div>
+            <h1 style="margin-left: 40px;">ARALING PANLIPUNAN : CENTRAL_SHELF</h1>
+        </header>
+
+        <main class="filing-cabinet">
+            <div class="shelf">
+                <div class="shelf-label">SHELF_03 / 3RD_QUARTER</div>
+                <div class="drawer-container">
+                    <div class="drawer" onclick="openFile(1)">
+                        <div class="handle"></div>
+                        <span class="drawer-text">Pambansang Kaunlaran</span>
+                    </div>
+                    <div class="drawer" onclick="openFile(2)">
+                        <div class="handle"></div>
+                        <span class="drawer-text">Agrikultura</span>
+                    </div>
+                    <div class="drawer" onclick="openFile(3)">
+                        <div class="handle"></div>
+                        <span class="drawer-text">Industriya</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shelf">
+                <div class="shelf-label label-red">SHELF_04 / 4TH_QUARTER</div>
+                <div class="drawer-container">
+                    <div class="drawer red-drawer" onclick="openFile(4)">
+                        <div class="handle"></div>
+                        <span class="drawer-text">Sektor ng Paglilingkod</span>
+                    </div>
+                    <div class="drawer red-drawer" onclick="openFile(5)">
+                        <div class="handle"></div>
+                        <span class="drawer-text">Impormal na Sektor</span>
+                    </div>
+                    <div class="drawer red-drawer" onclick="openFile(6)">
+                        <div class="handle"></div>
+                        <span class="drawer-text">Kalakalang Panlabas</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bottom-nav">
+            <a href="index.html" class="exit-link">LOGOUT_SYSTEM</a>
+            <div id="clock">00:00:00</div>
+        </footer>
+    </div>
+
+    <script src="ap2.js"></script>
+</body>
+</html>
